@@ -204,29 +204,29 @@ const Hero = () => {
   return (
     <section
       id="inicio"
-      className="relative min-h-[100svh] w-full overflow-hidden bg-offwhite md:bg-nude"
+      className="relative min-h-[100svh] w-full overflow-hidden bg-offwhite lg:bg-nude"
     >
-      <div className="flex min-h-[100svh] flex-col md:contents">
-        <div className="relative h-[44svh] min-h-[240px] w-full shrink-0 md:absolute md:inset-0 md:h-full md:min-h-0">
+      <div className="flex min-h-[100svh] flex-col lg:contents">
+        <div className="relative h-[44svh] min-h-[240px] w-full shrink-0 md:h-[42svh] md:min-h-[300px] lg:absolute lg:inset-0 lg:h-full lg:min-h-0">
           <img
             src="/images/mirelle-hero-spacious.png"
             alt="Mirelle J. Francisco em retrato editorial"
-            className="h-full w-full object-cover object-[50%_18%] md:object-[50%_0%]"
+            className="h-full w-full object-cover object-[50%_18%] md:object-[50%_10%] lg:object-[50%_0%]"
           />
         </div>
 
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] hidden h-28 bg-gradient-to-t from-softblack/10 to-transparent md:block" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] hidden h-28 bg-gradient-to-t from-softblack/10 to-transparent lg:block" />
 
         <motion.div
           initial={{ opacity: 0, y: REVEAL_RISE }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2, ease: EASE }}
-          className="relative z-20 -mt-5 flex flex-1 flex-col justify-end rounded-t-[1.75rem] bg-offwhite px-6 pb-24 pt-7 shadow-[0_-18px_36px_rgba(26,25,24,0.07)] md:absolute md:right-[6vw] md:top-[46%] md:mt-0 md:w-[min(31vw,32rem)] md:-translate-y-1/2 md:rounded-none md:bg-transparent md:px-0 md:pb-0 md:pt-0 md:shadow-none max-lg:md:right-8 max-lg:md:w-[min(36vw,28rem)]"
+          className="relative z-20 -mt-5 flex flex-1 flex-col justify-end rounded-t-[1.75rem] bg-offwhite px-6 pb-24 pt-7 shadow-[0_-18px_36px_rgba(26,25,24,0.07)] md:-mt-12 md:justify-start md:px-12 md:pb-20 md:pt-10 lg:absolute lg:right-[6vw] lg:top-[46%] lg:mt-0 lg:w-[min(31vw,32rem)] lg:-translate-y-1/2 lg:justify-end lg:rounded-none lg:bg-transparent lg:px-0 lg:pb-0 lg:pt-0 lg:shadow-none"
         >
           <p className="mb-3 font-sans text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-wine md:mb-4 md:text-[0.68rem]">
             Mirelle J. Francisco • CRP 12/19485
           </p>
-          <h1 className="max-w-[12ch] font-serif text-[clamp(2.35rem,10.5vw,3.4rem)] leading-[0.95] tracking-normal text-softblack/95 md:hero-copy-shadow md:max-w-[11ch] md:text-[clamp(3rem,5.4vw,6.4rem)] md:leading-[0.9] max-lg:md:text-[clamp(2.6rem,4.6vw,5.2rem)]">
+          <h1 className="max-w-[12ch] font-serif text-[clamp(2.35rem,10.5vw,3.4rem)] leading-[0.95] tracking-normal text-softblack/95 md:max-w-[13ch] md:text-[clamp(2.8rem,6.2vw,4rem)] md:leading-[0.92] lg:hero-copy-shadow lg:max-w-[11ch] lg:text-[clamp(3rem,5.4vw,6.4rem)] lg:leading-[0.9]">
             Terapia para relações mais saudáveis.
           </h1>
           <p className="mt-4 max-w-md font-sans text-[0.95rem] font-light leading-relaxed text-softblack/78 md:mt-5 md:text-base lg:text-lg">
@@ -288,25 +288,25 @@ const Marquee = () => {
 
 const Manifesto = () => {
   return (
-    <section id="cuidado" className="relative overflow-hidden bg-nude px-6 py-20 md:px-12 md:py-40 lg:px-24">
+    <section id="cuidado" className="relative overflow-hidden bg-nude px-6 py-20 md:px-12 md:py-32 lg:px-24 lg:py-40">
       <div className="pointer-events-none absolute -right-16 top-8 font-serif text-[18vw] leading-none text-wine/10">
         escuta
       </div>
 
       <motion.div
-        className="relative z-10 mx-auto grid max-w-7xl gap-10 md:grid-cols-12 md:items-end md:gap-12"
+        className="relative z-10 mx-auto grid max-w-7xl gap-10 lg:grid-cols-12 lg:items-end lg:gap-12"
         {...revealProps(0, 1)}
       >
-        <div className="md:col-span-7">
+        <div className="lg:col-span-7">
           <p className="mb-5 font-sans text-xs font-semibold uppercase tracking-[0.3em] text-wine md:mb-8 md:text-sm">
             Quando a relação pede cuidado
           </p>
-          <h2 className="font-serif text-[clamp(2.15rem,8.5vw,3rem)] leading-[1.02] tracking-normal text-softblack md:text-7xl md:leading-[0.95] lg:text-[6rem]">
+          <h2 className="font-serif text-[clamp(2.15rem,8.5vw,3rem)] leading-[1.02] tracking-normal text-softblack md:text-5xl md:leading-[0.98] lg:text-[6rem] lg:leading-[0.95]">
             O problema não precisa virar crise para virar conversa.
           </h2>
         </div>
 
-        <div className="md:col-span-5">
+        <div className="lg:col-span-5">
           <p className="mb-6 font-sans text-lg font-light leading-relaxed text-softblack/75 md:mb-8 md:text-xl">
             Se as conversas terminam sempre no mesmo lugar, se o afastamento
             cresce em silêncio ou se os padrões se repetem apesar do amor, a
@@ -351,12 +351,12 @@ const EmotionalSection = () => {
   ];
 
   return (
-    <section className="bg-softblack px-6 py-20 text-nude md:px-12 md:py-32 lg:px-24">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-10 md:grid-cols-12 md:gap-10">
-        <div className="relative md:sticky md:top-24 md:col-span-5 md:min-h-[calc(100svh-6rem)] md:py-10">
+    <section className="bg-softblack px-6 py-20 text-nude md:px-12 md:py-28 lg:px-24 lg:py-32">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-start gap-10 lg:grid-cols-12 lg:gap-10">
+        <div className="relative lg:sticky lg:top-24 lg:col-span-5 lg:min-h-[calc(100svh-6rem)] lg:py-10">
           <motion.div
             {...revealProps(0, 0.9)}
-            className="mb-8 overflow-hidden rounded-md md:hidden"
+            className="mb-8 overflow-hidden rounded-md lg:hidden"
           >
             <div className="aspect-[4/5] bg-nude/10 shadow-2xl shadow-black/40">
               <img
@@ -369,12 +369,12 @@ const EmotionalSection = () => {
 
           <motion.div
             {...revealProps()}
-            className="relative max-w-md rounded-md border border-nude/10 bg-softblack p-6 shadow-2xl shadow-black/40 md:overflow-hidden md:border-0 md:bg-[linear-gradient(to_top,rgba(24,23,21,0.96),rgba(24,23,21,0.54),rgba(24,23,21,0.08)),url('/images/mirelle-portrait.webp')] md:bg-cover md:bg-[position:50%_8%] md:p-10 md:pt-[32vh] md:shadow-black/40 md:h-[calc(100svh-9rem)] md:min-h-[560px] md:max-w-none"
+            className="relative max-w-md rounded-md border border-nude/10 bg-softblack p-6 shadow-2xl shadow-black/40 md:max-w-2xl md:p-8 lg:h-[calc(100svh-9rem)] lg:min-h-[560px] lg:max-w-none lg:overflow-hidden lg:border-0 lg:bg-[linear-gradient(to_top,rgba(24,23,21,0.96),rgba(24,23,21,0.54),rgba(24,23,21,0.08)),url('/images/mirelle-portrait.webp')] lg:bg-cover lg:bg-[position:50%_8%] lg:p-10 lg:pt-[32vh] lg:shadow-black/40"
           >
             <p className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.22em] text-nude/55 md:mb-5">
               Temas que aparecem na clínica
             </p>
-            <h2 className="font-serif text-[clamp(2.15rem,8vw,2.75rem)] leading-[0.95] tracking-normal text-nude md:text-[3.55rem] md:leading-[0.92] lg:text-[4.1rem]">
+            <h2 className="font-serif text-[clamp(2.15rem,8vw,2.75rem)] leading-[0.95] tracking-normal text-nude md:text-5xl md:leading-[0.94] lg:text-[4.1rem] lg:leading-[0.92]">
               O que pode chegar junto com você.
             </h2>
             <p className="mt-5 font-sans text-base font-light leading-relaxed text-nude/70 md:mt-8 md:text-lg">
@@ -384,17 +384,17 @@ const EmotionalSection = () => {
           </motion.div>
         </div>
 
-        <div className="flex flex-col gap-6 md:col-span-6 md:col-start-7 md:gap-10 md:py-[12vh]">
+        <div className="flex flex-col gap-6 md:gap-8 lg:col-span-6 lg:col-start-7 lg:gap-10 lg:py-[12vh]">
           {items.map((item, idx) => (
             <motion.div
               key={item.title}
-              className="group border-t border-nude/20 py-6 transition-transform duration-500 md:min-h-[38vh] md:py-8 md:hover:translate-x-3"
+              className="group border-t border-nude/20 py-6 transition-transform duration-500 md:py-8 lg:min-h-[38vh] lg:hover:translate-x-3"
               {...revealProps(idx * 0.08)}
             >
               <p className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.24em] text-nude/35 md:mb-6">
                 0{idx + 1}
               </p>
-              <h3 className="mb-4 font-serif text-[clamp(1.85rem,7vw,2.35rem)] text-nude transition-colors duration-500 md:mb-6 md:text-5xl md:group-hover:text-[#E3D0C2] lg:text-6xl">
+              <h3 className="mb-4 font-serif text-[clamp(1.85rem,7vw,2.35rem)] text-nude transition-colors duration-500 md:mb-6 md:text-4xl lg:text-6xl lg:group-hover:text-[#E3D0C2]">
                 {item.title}
               </h3>
               <p className="max-w-lg font-sans text-base font-light leading-relaxed text-nude/75 md:text-lg lg:text-xl">
@@ -420,11 +420,12 @@ const EmotionalSection = () => {
     </section>
   );
 };
+
 const PsychodramaSection = () => {
   return (
-    <section className="bg-softblack px-6 py-20 text-nude md:px-12 md:py-40 lg:px-24">
-      <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-12 md:items-center md:gap-16">
-        <div className="relative md:col-span-5">
+    <section className="bg-softblack px-6 py-20 text-nude md:px-12 md:py-32 lg:px-24 lg:py-40">
+      <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-12 lg:items-center lg:gap-16">
+        <div className="relative lg:col-span-5">
           <ScrollImageFrame
             src={SECTION_IMAGES.psychodrama}
             alt="Mirelle J. Francisco em dinâmica terapêutica"
@@ -434,7 +435,7 @@ const PsychodramaSection = () => {
           />
         </div>
 
-        <div className="relative z-10 md:col-span-6 md:col-start-7">
+        <div className="relative z-10 lg:col-span-6 lg:col-start-7">
           <motion.p
             {...revealProps(0, 0.75)}
             className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.24em] text-nude/55 md:mb-5"
@@ -443,7 +444,7 @@ const PsychodramaSection = () => {
           </motion.p>
           <motion.h2
             {...revealProps(0.06, 1)}
-            className="max-w-2xl font-serif text-[clamp(2.25rem,8.5vw,3rem)] leading-[0.98] tracking-normal md:text-7xl md:leading-[0.95] lg:text-[5.35rem]"
+            className="max-w-2xl font-serif text-[clamp(2.25rem,8.5vw,3rem)] leading-[0.98] tracking-normal md:text-5xl md:leading-[0.96] lg:text-[5.35rem] lg:leading-[0.95]"
           >
             A força do <span className="font-light italic text-wine">Psicodrama</span>
           </motion.h2>
@@ -468,7 +469,7 @@ const PsychodramaSection = () => {
 };
 const CouplesTherapy = () => {
   return (
-    <section id="terapia-casal" className="relative overflow-hidden bg-wine px-6 py-20 text-nude md:px-12 md:py-40 lg:px-24">
+    <section id="terapia-casal" className="relative overflow-hidden bg-wine px-6 py-20 text-nude md:px-12 md:py-32 lg:px-24 lg:py-40">
       <div className="pointer-events-none absolute bottom-0 right-0 font-serif text-[22vw] leading-none text-nude/10">
         casal
       </div>
@@ -476,18 +477,18 @@ const CouplesTherapy = () => {
       <div className="relative z-10 mx-auto max-w-7xl">
         <motion.div
           {...revealProps(0, 1)}
-          className="mb-12 border-b border-nude/25 pb-8 md:mb-24 md:pb-10"
+          className="mb-12 border-b border-nude/25 pb-8 md:mb-16 md:pb-10 lg:mb-24"
         >
           <p className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.3em] text-nude/70 md:mb-6">
             Para casais que querem sair do ciclo
           </p>
-          <h2 className="max-w-5xl font-serif text-[clamp(2.75rem,12vw,4.25rem)] leading-[0.92] tracking-normal md:text-[8rem] md:leading-[0.9] lg:text-[9rem]">
+          <h2 className="max-w-5xl font-serif text-[clamp(2.75rem,12vw,4.25rem)] leading-[0.92] tracking-normal md:text-[6rem] md:leading-[0.9] lg:text-[9rem]">
             Terapia de Casal
           </h2>
         </motion.div>
 
-        <div className="grid gap-10 md:grid-cols-12 md:items-end md:gap-12">
-          <div className="relative mb-4 pb-10 md:col-span-5 md:mb-0 md:pb-0">
+        <div className="grid gap-10 lg:grid-cols-12 lg:items-end lg:gap-12">
+          <div className="relative mb-4 pb-10 lg:col-span-5 lg:mb-0 lg:pb-0">
             <ScrollImageFrame
               src={SECTION_IMAGES.couples}
               alt="Mirelle J. Francisco em retrato para terapia de casal"
@@ -495,8 +496,8 @@ const CouplesTherapy = () => {
               intensity={1.35}
               className="aspect-[3/4] w-full bg-softblack shadow-black/40"
             />
-            <div className="absolute bottom-2 right-2 flex h-24 w-24 items-center justify-center rounded-full bg-nude p-3 text-center shadow-xl shadow-black/20 md:-bottom-8 md:-left-10 md:right-auto md:h-44 md:w-44 md:p-4">
-              <span className="font-serif text-sm italic leading-tight text-wine md:text-xl">
+            <div className="absolute bottom-2 right-2 flex h-24 w-24 items-center justify-center rounded-full bg-nude p-3 text-center shadow-xl shadow-black/20 md:h-32 md:w-32 md:p-4 lg:-bottom-8 lg:-left-10 lg:right-auto lg:h-44 lg:w-44">
+              <span className="font-serif text-sm italic leading-tight text-wine md:text-lg lg:text-xl">
                 Reencontre
                 <br />o caminho
               </span>
@@ -505,9 +506,9 @@ const CouplesTherapy = () => {
 
           <motion.div
             {...revealProps(0.1, 1)}
-            className="pb-4 md:col-span-6 md:col-start-7 md:pb-12"
+            className="pb-4 lg:col-span-6 lg:col-start-7 lg:pb-12"
           >
-            <div className="space-y-6 font-sans text-lg font-light leading-relaxed text-offwhite/90 md:space-y-8 md:text-2xl">
+            <div className="space-y-6 font-sans text-lg font-light leading-relaxed text-offwhite/90 md:space-y-7 md:text-xl lg:space-y-8 lg:text-2xl">
               <p>
                 A relação amorosa é onde nossas maiores fragilidades encontram
                 palco. Quando a comunicação falha, o que resta é o ruído do
@@ -559,17 +560,17 @@ const CouplesProgram = () => {
   ];
 
   return (
-    <section id="programa" className="bg-nude px-6 py-20 md:px-12 md:py-40 lg:px-24">
+    <section id="programa" className="bg-nude px-6 py-20 md:px-12 md:py-32 lg:px-24 lg:py-40">
       <div className="mx-auto max-w-7xl">
         <motion.div
           {...revealProps(0, 1)}
-          className="grid overflow-hidden bg-offwhite md:grid-cols-12"
+          className="grid overflow-hidden bg-offwhite lg:grid-cols-12"
         >
-          <div className="relative overflow-hidden bg-wine p-6 text-nude sm:p-8 md:col-span-5 md:p-12 lg:p-16">
+          <div className="relative overflow-hidden bg-wine p-6 text-nude sm:p-8 md:p-12 lg:col-span-5 lg:p-16">
             <p className="mb-6 font-sans text-xs font-semibold uppercase tracking-[0.3em] text-nude/70 md:mb-10">
               Programa de acompanhamento para casais
             </p>
-            <h2 className="mb-6 font-serif text-[clamp(2.75rem,11vw,3.5rem)] leading-[0.92] md:mb-10 md:text-8xl md:leading-[0.9]">
+            <h2 className="mb-6 font-serif text-[clamp(2.75rem,11vw,3.5rem)] leading-[0.92] md:mb-10 md:text-6xl md:leading-[0.9] lg:text-8xl">
               Entre Nós
             </h2>
             <p className="mb-8 font-sans text-base font-light leading-relaxed text-nude/80 md:mb-12 md:text-lg">
@@ -597,7 +598,7 @@ const CouplesProgram = () => {
             />
           </div>
 
-          <div className="p-6 sm:p-8 md:col-span-7 md:p-12 lg:p-16">
+          <div className="p-6 sm:p-8 md:p-12 lg:col-span-7 lg:p-16">
             <div className="mb-8 grid grid-cols-2 gap-5 md:mb-12 md:gap-6">
               <div className="border-t border-softblack/20 pt-4 md:pt-5">
                 <span className="font-serif text-4xl italic text-wine md:text-5xl">
@@ -681,10 +682,10 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicos" className="bg-offwhite px-6 py-20 md:px-12 md:py-32 lg:px-24">
+    <section id="servicos" className="bg-offwhite px-6 py-20 md:px-12 md:py-28 lg:px-24 lg:py-32">
       <div className="mx-auto max-w-5xl">
-        <div className="mb-12 flex flex-col items-start justify-between gap-4 border-b border-softblack pb-6 md:mb-16 md:flex-row md:items-end md:pb-8">
-          <h2 className="font-serif text-[clamp(2rem,7.5vw,2.75rem)] text-softblack md:text-6xl">
+        <div className="mb-12 flex flex-col items-start justify-between gap-4 border-b border-softblack pb-6 md:mb-14 md:flex-row md:items-end md:pb-8 lg:mb-16">
+          <h2 className="font-serif text-[clamp(2rem,7.5vw,2.75rem)] text-softblack md:text-5xl lg:text-6xl">
             Formatos{" "}
             <span className="italic text-wine">de Atendimento</span>
           </h2>
@@ -735,18 +736,18 @@ const Services = () => {
 
 const About = () => {
   return (
-    <section id="sobre" className="relative overflow-hidden bg-nude px-6 py-20 md:px-12 md:py-32 lg:px-24">
-      <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center gap-12 md:flex-row md:gap-16">
-        <div className="order-2 w-full md:order-1 md:w-5/12">
+    <section id="sobre" className="relative overflow-hidden bg-nude px-6 py-20 md:px-12 md:py-28 lg:px-24 lg:py-32">
+      <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center gap-12 lg:flex-row lg:gap-16">
+        <div className="order-2 w-full lg:order-1 lg:w-5/12">
           <motion.div
             initial={{ opacity: 0, x: -80, y: 90, scale: 0.9, rotate: -4 }}
             whileInView={{ opacity: 1, x: 0, y: 0, scale: 1, rotate: 0 }}
             whileHover={{ scale: 1.025, rotate: -1.2 }}
             viewport={{ once: false, amount: 0.32 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="relative max-md:mx-auto max-md:max-w-sm"
+            className="relative max-lg:mx-auto max-lg:max-w-md"
           >
-            <div className="absolute -inset-3 -z-10 hidden rounded-[2rem] border border-wine/15 md:block" />
+            <div className="absolute -inset-3 -z-10 hidden rounded-[2rem] border border-wine/15 lg:block" />
             <ScrollImageFrame
               src={SECTION_IMAGES.about}
               alt="Retrato profissional de Mirelle J. Francisco"
@@ -757,8 +758,8 @@ const About = () => {
           </motion.div>
         </div>
 
-        <div className="order-1 w-full md:order-2 md:w-7/12">
-          <h2 className="mb-5 font-serif text-[clamp(2.5rem,9vw,3.25rem)] leading-none text-softblack md:mb-6 md:text-7xl">
+        <div className="order-1 w-full lg:order-2 lg:w-7/12">
+          <h2 className="mb-5 font-serif text-[clamp(2.5rem,9vw,3.25rem)] leading-none text-softblack md:mb-6 md:text-6xl lg:text-7xl">
             Mirelle J. <br />
             <span className="italic text-wine">Francisco</span>
           </h2>
@@ -787,18 +788,18 @@ const About = () => {
 
 const Location = () => {
   return (
-    <section id="localizacao" className="bg-offwhite px-6 py-16 md:px-12 md:py-28 lg:px-24">
-      <div className="mx-auto grid max-w-7xl gap-8 border-t border-softblack/10 pt-10 md:grid-cols-12 md:items-end md:gap-10 md:pt-12">
-        <div className="md:col-span-5">
+    <section id="localizacao" className="bg-offwhite px-6 py-16 md:px-12 md:py-24 lg:px-24 lg:py-28">
+      <div className="mx-auto grid max-w-7xl gap-8 border-t border-softblack/10 pt-10 lg:grid-cols-12 lg:items-end lg:gap-10 lg:pt-12">
+        <div className="lg:col-span-5">
           <p className="mb-4 font-sans text-xs font-medium uppercase tracking-[0.3em] text-wine md:mb-5">
             Atendimento presencial em Laguna
           </p>
-          <h2 className="font-serif text-[clamp(2.25rem,8vw,3rem)] leading-none text-softblack md:text-7xl">
+          <h2 className="font-serif text-[clamp(2.25rem,8vw,3rem)] leading-none text-softblack md:text-6xl lg:text-7xl">
             Localização
           </h2>
         </div>
 
-        <div className="md:col-span-3">
+        <div className="lg:col-span-3">
           <address className="font-sans text-sm font-light not-italic leading-relaxed text-softblack/75 md:text-base">
             Mirelle J. Francisco - Psicóloga Clínica
             <br />
@@ -819,7 +820,7 @@ const Location = () => {
           </a>
         </div>
 
-        <div className="overflow-hidden bg-nude md:col-span-4">
+        <div className="overflow-hidden bg-nude lg:col-span-4">
           <iframe
             title="Mapa do consultório de Mirelle J. Francisco em Laguna"
             src={MAPS_EMBED}
@@ -835,9 +836,9 @@ const Location = () => {
 
 const Footer = () => {
   return (
-    <footer className="bg-softblack px-6 pb-10 pt-20 text-offwhite md:px-12 md:pb-12 md:pt-32 lg:px-24">
+    <footer className="bg-softblack px-6 pb-10 pt-20 text-offwhite md:px-12 md:pb-12 md:pt-28 lg:px-24 lg:pt-32">
       <div className="mx-auto mb-16 flex max-w-7xl flex-col items-center text-center md:mb-24">
-        <h2 className="mb-8 font-serif text-[clamp(2.35rem,9vw,3rem)] md:mb-12 md:text-7xl lg:text-8xl">
+        <h2 className="mb-8 font-serif text-[clamp(2.35rem,9vw,3rem)] md:mb-12 md:text-6xl lg:text-8xl">
           Vamos <span className="italic text-wine">conversar?</span>
         </h2>
         <a
@@ -927,9 +928,9 @@ const FloatingWhatsApp = () => {
       target="_blank"
       rel="noreferrer"
       aria-label="Chamar Mirelle no WhatsApp"
-      className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-4 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl shadow-softblack/30 ring-4 ring-white/80 transition-all hover:-translate-y-1 hover:bg-[#1DA851] md:bottom-5 md:right-5 md:h-20 md:w-20"
+      className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-4 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl shadow-softblack/30 ring-4 ring-white/80 transition-all hover:-translate-y-1 hover:bg-[#1DA851] md:bottom-5 md:right-5 lg:h-20 lg:w-20"
     >
-      <WhatsAppIcon className="h-8 w-8 md:h-11 md:w-11" />
+      <WhatsAppIcon className="h-8 w-8 lg:h-11 lg:w-11" />
     </a>
   );
 };
