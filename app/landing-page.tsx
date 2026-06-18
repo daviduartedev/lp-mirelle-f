@@ -227,11 +227,13 @@ const Hero = () => {
             Mirelle J. Francisco • CRP 12/19485
           </p>
           <h1 className="max-w-[12ch] font-serif text-[clamp(2.35rem,10.5vw,3.4rem)] leading-[0.95] tracking-normal text-softblack/95 md:max-w-[13ch] md:text-[clamp(2.8rem,6.2vw,4rem)] md:leading-[0.92] lg:hero-copy-shadow lg:max-w-[11ch] lg:text-[clamp(3rem,5.4vw,6.4rem)] lg:leading-[0.9]">
-            Terapia para relações mais saudáveis.
+            Terapia para <span className="hero-shine-text">relações</span> mais{" "}
+            <span className="hero-shine-text italic">saudáveis.</span>
           </h1>
           <p className="mt-4 max-w-md font-sans text-[0.95rem] font-light leading-relaxed text-softblack/78 md:mt-5 md:text-base lg:text-lg">
-            Atendimento presencial em Laguna e online para adultos, casais,
-            mulheres e pessoas LGBT+.
+            Atendimento <span className="hero-shine-text font-medium">presencial em Laguna</span>{" "}
+            e <span className="hero-shine-text font-medium">online</span> para adultos,
+            casais, mulheres e pessoas LGBT+.
           </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center md:mt-7">
             <a
@@ -824,7 +826,7 @@ const Location = () => {
           <iframe
             title="Mapa do consultório de Mirelle J. Francisco em Laguna"
             src={MAPS_EMBED}
-            className="h-64 w-full grayscale md:h-72"
+            className="h-64 w-full md:h-72"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
