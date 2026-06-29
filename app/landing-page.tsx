@@ -1,12 +1,12 @@
 "use client";
-// LP Mirelle J. Francisco — landing page
+// LP Mirelle J. Francisco - landing page
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence, type Variants } from "motion/react";
 import { ArrowRight, ArrowUpRight, Instagram, Menu, X } from "lucide-react";
 
 /*
- * Animação padrão do site — estilo Webflow.
+ * Animação padrão do site - estilo Webflow.
  * Apenas ENTRADA ao rolar: fade + leve subida, uma única vez (once: true).
  * Não há movimento de saída e os elementos não reanimam ao rolar de volta.
  * Centralizado aqui para manter tudo coerente entre as seções.
@@ -120,7 +120,7 @@ const Header = () => {
           </span>
         </a>
 
-        {/* Navegação completa — apenas desktop */}
+        {/* Navegação completa - apenas desktop */}
         <nav className="hidden items-center gap-6 lg:flex">
           {NAV_LINKS.slice(1).map((link) => (
             <a
@@ -134,7 +134,7 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center gap-2">
-          {/* CTA WhatsApp — escondido no mobile bem estreito para dar espaço ao logo */}
+          {/* CTA WhatsApp - escondido no mobile bem estreito para dar espaço ao logo */}
           <a
             href={WHATSAPP_LINK}
             target="_blank"
@@ -145,7 +145,7 @@ const Header = () => {
             <ArrowUpRight className="h-3.5 w-3.5" />
           </a>
 
-          {/* Botão hambúrguer — mobile e tablet */}
+          {/* Botão hambúrguer - mobile e tablet */}
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -340,7 +340,7 @@ const EmotionalSection = () => {
     },
     {
       title: "Ansiedade & Angústia",
-      desc: "O peso invisível do excesso de futuro e da autocobrança desmedida.",
+      desc: "Quando pensamentos acelerados, preocupações e inquietações passam a ocupar espaço demais na vida.",
     },
     {
       title: "Autoestima",
@@ -373,11 +373,8 @@ const EmotionalSection = () => {
             {...revealProps()}
             className="relative max-w-md rounded-md border border-nude/10 bg-softblack p-6 shadow-2xl shadow-black/40 md:max-w-2xl md:p-8 lg:h-[calc(100svh-9rem)] lg:min-h-[560px] lg:max-w-none lg:overflow-hidden lg:border-0 lg:bg-[linear-gradient(to_top,rgba(24,23,21,0.96),rgba(24,23,21,0.54),rgba(24,23,21,0.08)),url('/images/mirelle-portrait.webp')] lg:bg-cover lg:bg-[position:50%_8%] lg:p-10 lg:pt-[32vh] lg:shadow-black/40"
           >
-            <p className="mb-4 font-sans text-xs font-semibold uppercase tracking-[0.22em] text-nude/55 md:mb-5">
-              Temas que aparecem na clínica
-            </p>
             <h2 className="font-serif text-[clamp(2.15rem,8vw,2.75rem)] leading-[0.95] tracking-normal text-nude md:text-5xl md:leading-[0.94] lg:text-[4.1rem] lg:leading-[0.92]">
-              O que pode chegar junto com você.
+              Questões que podem ser trabalhadas em terapia.
             </h2>
             <p className="mt-5 font-sans text-base font-light leading-relaxed text-nude/70 md:mt-8 md:text-lg">
               Uma escuta cuidadosa para reconhecer padrões, conflitos e pesos
@@ -557,7 +554,7 @@ const CouplesProgram = () => {
     {
       label: "NÓS",
       title: "Construir a relação",
-      text: "Criar novas formas de diálogo, intimidade e responsabilidade afetiva.",
+      text: "Criar novas formas de diálogo, intimidade e cuidado para se aproximar da relação que vocês desejam viver.",
     },
   ];
 
@@ -659,21 +656,21 @@ const Services = () => {
     {
       name: "Psicoterapia Individual",
       meta: "50 min",
-      desc: "Um espaço seguro para explorar sua subjetividade, angústias e desejos mais profundos. Modalidade online ou presencial.",
+      desc: "Um espaço de escuta para olhar com mais calma para o que você sente, compreender seus desafios e encontrar formas mais saudáveis de lidar com a vida.",
     },
     {
       name: "Terapia de Casal",
       meta: "100 min",
-      desc: "Sessões estendidas para mediação de conflitos e reconstrução do vínculo afetivo, com foco na dinâmica relacional.",
+      desc: "Um espaço para o casal conversar com mais clareza, compreender os conflitos e construir novas formas de diálogo, presença e cuidado na relação.",
     },
     {
       name: "Atendimento Presencial",
       meta: "Laguna / SC",
-      desc: "Espaço físico acolhedor e sigiloso localizado na Rua Anita Garibaldi, 48, Centro, Laguna.",
+      desc: "Espaço físico acolhedor e sigiloso. Rua Anita Garibaldi, nº 48, Centro - Laguna, Santa Catarina.",
     },
     {
       name: "Atendimento Online",
-      meta: "Brasil",
+      meta: "Brasil e brasileiros no exterior",
       desc: "Sessões por videochamada para pacientes em outras localidades, mantendo o mesmo rigor e ética do presencial.",
     },
     {
@@ -692,7 +689,7 @@ const Services = () => {
             <span className="italic text-wine">de Atendimento</span>
           </h2>
           <span className="font-sans text-xs uppercase tracking-widest text-softblack/60">
-            Clínica & Online
+            Presencial e online
           </span>
         </div>
 
